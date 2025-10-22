@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Arena 3D — GitHub Demo</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Three.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.158.0/examples/js/controls/PointerLockControls.js"></script>
+</head>
+<body>
+  <div id="ui">
+    <div id="topbar">
+      <div id="title">Arena 3D</div>
+      <div id="stats">Score: <span id="score">0</span> • Kills: <span id="kills">0</span></div>
+    </div>
+
+    <div id="hud">
+      <div id="health">❤ 100</div>
+      <div id="ammo">Ammo: <span id="ammo-count">30</span></div>
+    </div>
+
+    <div id="menu" class="panel">
+      <h2>Arena 3D</h2>
+      <p class="muted">A compact third-person 3D arena shooter built with Three.js. Click <b>Start</b> and use WASD + mouse to move and shoot.</p>
+      <div class="controls">
+        <button id="startBtn">Start</button>
+        <button id="spawnBotBtn">Spawn Bot</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+      <p class="muted">Tip: press <b>Space</b> to jump, <b>R</b> to reload.</p>
+    </div>
+
+    <div id="minimap" class="panel small">MiniMap</div>
+  </div>
+
+  <canvas id="c"></canvas>
+
+  <script src="app.js"></script>
+</body>
+</html>
